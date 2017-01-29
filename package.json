@@ -1,7 +1,16 @@
 {
-    "name": "theme-quietlight",
+    "name": "theme-quietlight-vsc",
     "displayName": "Quiet Light for VSC",
-    "description": "Light, peaceful coding",
+    "description": "Light, peaceful coding.",
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/onecrayon/theme-quietlight-vsc.git"
+	},
+    "galleryBanner": {
+        "color": "#e6ebf2",
+        "theme": "light"
+    },
+    "icon": "images/icon.png",
     "version": "0.0.1",
     "publisher": "onecrayon",
     "engines": {
