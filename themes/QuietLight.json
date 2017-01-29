@@ -37,29 +37,11 @@
 			}
 		},
 		{
-			"name": "Comments: Preprocessor",
-			"scope": [
-				"comment.block.preprocessor"
-			],
-			"settings": {
-				"foreground": "#aaaaaa"
-			}
-		},
-		{
-			"name": "Comments: Documentation",
-			"scope": [
-				"comment.documentation",
-				"comment.block.documentation"
-			],
-			"settings": {
-				"foreground": "#aaaaaa"
-			}
-		},
-		{
 			"name": "Comments: Keywords",
 			"scope": [
-				"comment.documentation keyword",
-				"comment.block.documentation keyword"
+				"comment.keyword",
+				"keyword.codetag",
+				"keyword.phpdoc"
 			],
 			"settings": {
 				"fontStyle": "bold"
@@ -97,8 +79,7 @@
 			"name": "Keywords",
 			"scope": [
 				"keyword",
-				"storage",
-				"keyword punctuation"
+				"keyword.operator.expression"
 			],
 			"settings": {
 				"foreground": "#4b83cd"
@@ -107,7 +88,7 @@
 		{
 			"name": "Keywords: Punctuation",
 			"scope": [
-				"keyword punctuation"
+				"punctuation.definition.keyword"
 			],
 			"settings": {
 				"foreground": "#91b3e0"
@@ -125,7 +106,9 @@
 		{
 			"name": "Types",
 			"scope": [
+				"storage",
 				"storage.type",
+				"storage.modifier",
 				"support.type"
 			],
 			"settings": {
@@ -166,6 +149,8 @@
 			"name": "Functions",
 			"scope": [
 				"entity.name.function",
+				"entity.name.class",
+				"entity.method.name",
 				"support.function",
 				"function-call"
 			],
@@ -226,16 +211,9 @@
 		{
 			"name": "Strings",
 			"scope": [
-				"string"
-			],
-			"settings": {
-				"foreground": "#448c27"
-			}
-		},
-		{
-			"name": "Strings: Punctuation",
-			"scope": [
-				"string.punctuation"
+				"string",
+				"punctuation.definition.string",
+				"string.regexp"
 			],
 			"settings": {
 				"foreground": "#448c27"
@@ -262,7 +240,8 @@
 		{
 			"name": "Strings: Regex operators",
 			"scope": [
-				"string regexp"
+				"keyword.regexp",
+				"constant.regexp"
 			],
 			"settings": {
 				"foreground": "#7a3e9d"
@@ -278,11 +257,20 @@
 			}
 		},
 		{
+			"name": "Strings: Interpolation",
+			"scope": [
+				"punctuation.definition.template-expression.begin.ts",
+				"punctuation.definition.template-expression.end.ts"
+			],
+			"settings": {
+				"foreground": "#ab6526"
+			}
+		},
+		{
 			"name": "Punctuation",
 			"scope": [
 				"punctuation",
-				"punctuation.separator",
-				"meta punctuation.separator"
+				"punctuation.separator"
 			],
 			"settings": {
 				"foreground": "#777777"
@@ -327,8 +315,7 @@
 		{
 			"name": "HTML: Attribute Names",
 			"scope": [
-				"meta.tag entity.other.attribute-name",
-				"entity.other.attribute-name.html"
+				"entity.other.attribute-name"
 			],
 			"settings": {
 				"foreground": "#91b3e0"
@@ -349,10 +336,17 @@
 			"scope": [
 				"meta.selector",
 				"selector.css",
+				"entity.name.selector",
+				"entity.id.css",
 				"entity.tag.css",
 				"entity.class.css",
 				"entity.pseudo-class.css",
-				"entity.id.css"
+				"entity.parent-selector.css",
+				"entity.pseudo-element.css",
+
+				"source.css.less entity.other.attribute-name.id",
+				"entity.other.attribute-name.attribute.scss",
+				"entity.other.attribute-name.scss"
 			],
 			"settings": {
 				"foreground": "#7a3e9d"
@@ -372,11 +366,9 @@
 			"name": "CSS: Property Values",
 			"scope": [
 				"meta.property-value",
-				"meta.property-value constant.other",
 				"support.constant.property-value",
-				"property-value keyword",
-				"property-value punctuation",
-				"property-value constant"
+				"css.constant",
+				"css.keyword"
 			],
 			"settings": {
 				"foreground": "#448c27"
@@ -385,7 +377,9 @@
 		{
 			"name": "CSS: Variable",
 			"scope": [
-				"css variable"
+				"variable.css",
+				"variable.less",
+				"variable.scss"
 			],
 			"settings": {
 				"foreground": "#aa3731"
@@ -490,7 +484,8 @@
 				"markup.bold"
 			],
 			"settings": {
-				"fontStyle": "bold"
+				"fontStyle": "bold",
+				"foreground": ""
 			}
 		},
 		{
@@ -594,6 +589,16 @@
 			],
 			"settings": {
 				"background": "#e6ebf2"
+			}
+		},
+		{
+			"name": "PHP: Delimiters",
+			"scope": [
+				"punctuation.section.embedded.metatag.php"
+			],
+			"settings": {
+				"foreground": "#aa3731",
+				"fontStyle": "bold"
 			}
 		}
 	]
