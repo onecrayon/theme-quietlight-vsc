@@ -44,7 +44,8 @@
 				"keyword.phpdoc"
 			],
 			"settings": {
-				"fontStyle": "bold"
+				"fontStyle": "bold",
+				"foreground": "#aaaaaa"
 			}
 		},
 		{
@@ -79,7 +80,8 @@
 			"name": "Keywords",
 			"scope": [
 				"keyword",
-				"keyword.operator.expression"
+				"keyword.operator.expression",
+				"keyword.control.at-rule.css"
 			],
 			"settings": {
 				"foreground": "#4b83cd"
@@ -88,7 +90,8 @@
 		{
 			"name": "Keywords: Punctuation",
 			"scope": [
-				"punctuation.definition.keyword"
+				"punctuation.definition.keyword",
+				"keyword.control.at-rule.css punctuation"
 			],
 			"settings": {
 				"foreground": "#91b3e0"
@@ -120,7 +123,8 @@
 			"scope": [
 				"constant.language",
 				"support.constant",
-				"variable.language"
+				"variable.language",
+				"variable.language.this"
 			],
 			"settings": {
 				"foreground": "#ab6526"
@@ -156,6 +160,17 @@
 			],
 			"settings": {
 				"foreground": "#aa3731"
+			}
+		},
+		{
+			"name": "Functions: definitions",
+			"scope": [
+				"entity.name.function",
+				"entity.name.class",
+				"entity.method.name"
+			],
+			"settings": {
+				"fontStyle": "bold"
 			}
 		},
 		{
@@ -212,6 +227,7 @@
 			"name": "Strings",
 			"scope": [
 				"string",
+				"string.quoted",
 				"punctuation.definition.string",
 				"string.regexp"
 			],
@@ -295,6 +311,7 @@
 			"name": "HTML: Tags",
 			"scope": [
 				"meta.tag",
+				"entity.attribute-name",
 				"punctuation.definition.tag.html",
 				"punctuation.definition.tag.begin.html",
 				"punctuation.definition.tag.end.html"
@@ -313,12 +330,13 @@
 			}
 		},
 		{
-			"name": "HTML: Attribute Names",
+			"name": "HTML: Attribute Values",
 			"scope": [
-				"entity.other.attribute-name"
+				"meta.tag string.quoted",
+				"meta.tag punctuation.definition.string"
 			],
 			"settings": {
-				"foreground": "#91b3e0"
+				"foreground": "#448c27"
 			}
 		},
 		{
@@ -343,6 +361,16 @@
 				"entity.pseudo-class.css",
 				"entity.parent-selector.css",
 				"entity.pseudo-element.css",
+
+				"entity.id.scss",
+				"entity.tag.scss",
+				"entity.class.scss",
+				"entity.pseudo-class.scss",
+				"entity.parent-selector.scss",
+				"entity.pseudo-element.scss",
+
+				"punctuation.separator.list.css",
+				"meta.property-list keyword.operator.less",
 
 				"source.css.less entity.other.attribute-name.id",
 				"entity.other.attribute-name.attribute.scss",
@@ -392,6 +420,74 @@
 			],
 			"settings": {
 				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "JS: Variables",
+			"scope": [
+				"variable.js"
+			],
+			"settings": {
+				"foreground": "#333333"
+			}
+		},
+		{
+			"name": "JS: Function overrides",
+			"scope": [
+				"entity.name.function.js"
+			],
+			"settings": {
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "JS: Embedded",
+			"scope": [
+				"source.embedded"
+			],
+			"settings": {
+				"background": "#eaebe6"
+			}
+		},
+		{
+			"name": "PHP: Background",
+			"scope": [
+				"source.php"
+			],
+			"settings": {
+				"background": "#e6ebf2"
+			}
+		},
+		{
+			"name": "PHP: Delimiters",
+			"scope": [
+				"punctuation.section.embedded.metatag.php"
+			],
+			"settings": {
+				"foreground": "#aa3731",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Python: Decorators",
+			"scope": [
+				"entity.name.function.decorator",
+				"meta.function.decorator punctuation.definition",
+				"meta.function.decorator string",
+				"meta.function.decorator punctuation.definition.string",
+				"meta.function.decorator function-call.arguments"
+			],
+			"settings": {
+				"foreground": "#aaaaaa"
+			}
+		},
+		{
+			"name": "Python: Parameters",
+			"scope": [
+				"variable.language.parameter"
+			],
+			"settings": {
+				"foreground": "#333333"
 			}
 		},
 		{
@@ -562,43 +658,6 @@
 			],
 			"settings": {
 				"background": "#e4f6d4"
-			}
-		},
-		{
-			"name": "JS: Variables",
-			"scope": [
-				"variable.js"
-			],
-			"settings": {
-				"foreground": "#333333"
-			}
-		},
-		{
-			"name": "JS: Embedded",
-			"scope": [
-				"source.embedded"
-			],
-			"settings": {
-				"background": "#eaebe6"
-			}
-		},
-		{
-			"name": "PHP: Background",
-			"scope": [
-				"source.php"
-			],
-			"settings": {
-				"background": "#e6ebf2"
-			}
-		},
-		{
-			"name": "PHP: Delimiters",
-			"scope": [
-				"punctuation.section.embedded.metatag.php"
-			],
-			"settings": {
-				"foreground": "#aa3731",
-				"fontStyle": "bold"
 			}
 		}
 	]
