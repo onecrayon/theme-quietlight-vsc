@@ -1,0 +1,7 @@
+# Quiet Light for VSC
+
+Quiet Light for VSC is a light, peaceful theme, ported to Visual Studio Code by me, the designer of the original Quiet Light theme for MacRabbit's Espresso text editor on macOS.
+
+When I launched Visual Studio Code for the first time I was surprised and delighted to find that my Quiet Light theme was included by default. However, it as a little rough around the edges since I didn't have anything to do with the Textmate port of the theme, and thus Quiet Light for VSC was born.
+
+I hope you enjoy working by Quiet Light!

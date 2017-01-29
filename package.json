@@ -1,0 +1,22 @@
+{
+    "name": "theme-quietlight",
+    "displayName": "Quiet Light for VSC",
+    "description": "Light, peaceful coding",
+    "version": "0.0.1",
+    "publisher": "onecrayon",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Quiet Light for VSC",
+                "uiTheme": "vs",
+                "path": "./themes/QuietLight.json"
+            }
+        ]
+    }
+}
