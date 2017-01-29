@@ -1,7 +1,10 @@
 # Change Log
-All notable changes to the "theme-quietlight" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+The format is based on [Keep a Changelog](http://keepachangelog.com/).
+
+## [v1.0.0] - 2017-29-01
 - Initial release
+- Officially supports HTML, CSS / LESS / SCSS, JavaScript, PHP, and Python
+
