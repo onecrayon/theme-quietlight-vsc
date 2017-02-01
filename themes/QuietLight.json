@@ -20,8 +20,8 @@
 				"findRangeHighlight": "#e4f6d4",
 				"findMatchHighlight": "#dcdcdc",
 				"currentFindMatchHighlight": "#fef935",
-				"wordHighlight": "#000000",
-				"wordHighlightStrong": "#000000",
+				"wordHighlight": "#e2f5dc",
+				"wordHighlightStrong": "#e2f5dc",
 				"activeLinkForeground": "#91b3e0",
 				"gotoDefinitionLinkForeground": "#4b83cd"
 			}
