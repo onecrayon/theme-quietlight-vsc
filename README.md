@@ -15,6 +15,7 @@ I hope you enjoy working by Quiet Light! Please [let me know](http://onecrayon.c
 * JavaScript
 * PHP
 * Python
+* Markdown
 
 ## Known issues
 

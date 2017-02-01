@@ -11,7 +11,7 @@
         "theme": "light"
     },
     "icon": "images/icon.png",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "onecrayon",
     "engines": {
         "vscode": "^1.5.0"
