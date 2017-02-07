@@ -17,10 +17,11 @@ I hope you enjoy working by Quiet Light! Please [let me know](http://onecrayon.c
 * Python
 * Markdown
 
+**Please note** that Quiet Light 1.0.2+ requires Visual Studio Code 1.9 or greater.
+
 ## Known issues
 
-* No background colors for PHP, embedded JS, or embedded CSS
+* No background colors
 * PHP coloration in HTML attribute strings is currently borked
-* Several JS function calls are bold, despite scope being overridden
 * SCSS commas in selectors (and some tag names) are uncolored (no syntax zone)
 * HTML `<style>` tag attribute equal signs are miscolored (no syntax zone)

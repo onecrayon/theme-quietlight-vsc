@@ -81,7 +81,9 @@
 			"scope": [
 				"keyword",
 				"keyword.operator.expression",
-				"keyword.control.at-rule.css"
+				"keyword.control.at-rule.css",
+				"source.php storage.modifier",
+				"source.php storage.type"
 			],
 			"settings": {
 				"foreground": "#4b83cd"
@@ -143,7 +145,7 @@
 		{
 			"name": "Variables: Punctuation",
 			"scope": [
-				"variable.punctuation"
+				"punctuation.definition.variable"
 			],
 			"settings": {
 				"foreground": "#b19bbd"
@@ -156,7 +158,7 @@
 				"entity.name.class",
 				"entity.method.name",
 				"support.function",
-				"function-call"
+				"meta.function-call"
 			],
 			"settings": {
 				"foreground": "#aa3731"
@@ -176,7 +178,7 @@
 		{
 			"name": "Functions: parameters",
 			"scope": [
-				"function-call.arguments"
+				"meta.function-call.arguments"
 			],
 			"settings": {
 				"foreground": "#333333"
@@ -229,7 +231,8 @@
 				"string",
 				"string.quoted",
 				"punctuation.definition.string",
-				"string.regexp"
+				"string.regexp",
+				"storage.type.string"
 			],
 			"settings": {
 				"foreground": "#448c27"
@@ -256,8 +259,11 @@
 		{
 			"name": "Strings: Regex operators",
 			"scope": [
-				"keyword.regexp",
-				"constant.regexp"
+				"string.regexp keyword",
+				"string.regexp keyword.operator",
+				"string.regexp constant",
+				"string.regexp constant.character",
+				"string.regexp punctuation"
 			],
 			"settings": {
 				"foreground": "#7a3e9d"
@@ -314,7 +320,9 @@
 				"entity.attribute-name",
 				"punctuation.definition.tag.html",
 				"punctuation.definition.tag.begin.html",
-				"punctuation.definition.tag.end.html"
+				"punctuation.definition.tag.end.html",
+				"entity.other.attribute-name.html",
+				"punctuation.separator.key-value.html"
 			],
 			"settings": {
 				"foreground": "#91b3e0"
@@ -355,12 +363,13 @@
 				"meta.selector",
 				"selector.css",
 				"entity.name.selector",
-				"entity.id.css",
-				"entity.tag.css",
-				"entity.class.css",
-				"entity.pseudo-class.css",
-				"entity.parent-selector.css",
-				"entity.pseudo-element.css",
+				"entity.other.attribute-name.id.css",
+				"source.css entity.name.tag",
+				"entity.other.attribute-name.class",
+				"entity.other.attribute-name.pseudo-class",
+				"entity.other.attribute-name.parent-selector",
+				"entity.other.attribute-name.pseudo-element",
+				"punctuation.definition.entity.css",
 
 				"entity.id.scss",
 				"entity.tag.scss",
@@ -374,7 +383,8 @@
 
 				"source.css.less entity.other.attribute-name.id",
 				"entity.other.attribute-name.attribute.scss",
-				"entity.other.attribute-name.scss"
+				"entity.other.attribute-name.scss",
+				"entity.name.function.scss"
 			],
 			"settings": {
 				"foreground": "#7a3e9d"
@@ -394,9 +404,11 @@
 			"name": "CSS: Property Values",
 			"scope": [
 				"meta.property-value",
-				"support.constant.property-value",
-				"css.constant",
-				"css.keyword"
+				"source.css keyword.other",
+				"source.css constant",
+				"source.css constant.numeric",
+				"source.css constant.numeric punctuation",
+				"meta.property-value support.constant"
 			],
 			"settings": {
 				"foreground": "#448c27"
@@ -405,9 +417,9 @@
 		{
 			"name": "CSS: Variable",
 			"scope": [
-				"variable.css",
-				"variable.less",
-				"variable.scss"
+				"source.css variable",
+				"source.css.less variable",
+				"source.css.scss variable"
 			],
 			"settings": {
 				"foreground": "#aa3731"
@@ -425,7 +437,10 @@
 		{
 			"name": "JS: Variables",
 			"scope": [
-				"variable.js"
+				"variable.js",
+				"source.js variable",
+				"source.js support.variable",
+				"source.js support.type"
 			],
 			"settings": {
 				"foreground": "#333333"
@@ -447,6 +462,15 @@
 			],
 			"settings": {
 				"background": "#eaebe6"
+			}
+		},
+		{
+			"name": "JSON: Properties",
+			"scope": [
+				"punctuation.support.type.property-name"
+			],
+			"settings": {
+				"foreground": "#ab6526"
 			}
 		},
 		{
@@ -473,9 +497,11 @@
 			"scope": [
 				"entity.name.function.decorator",
 				"meta.function.decorator punctuation.definition",
-				"meta.function.decorator string",
+				"meta.function.decorator string.quoted",
 				"meta.function.decorator punctuation.definition.string",
-				"meta.function.decorator function-call.arguments"
+				"meta.function.decorator meta.function-call.arguments",
+				"meta.function.decorator variable.parameter",
+				"meta.function.decorator keyword.operator"
 			],
 			"settings": {
 				"foreground": "#aaaaaa"
@@ -484,10 +510,28 @@
 		{
 			"name": "Python: Parameters",
 			"scope": [
-				"variable.language.parameter"
+				"source.python variable.parameter"
 			],
 			"settings": {
 				"foreground": "#333333"
+			}
+		},
+		{
+			"name": "Python: Support Type",
+			"scope": [
+				"source.python support.type"
+			],
+			"settings": {
+				"foreground": "#333333"
+			}
+		},
+		{
+			"name": "Python: Function calls",
+			"scope": [
+				"source.python meta.function-call support.type"
+			],
+			"settings": {
+				"foreground": "#aa3731"
 			}
 		},
 		{
@@ -539,7 +583,8 @@
 		{
 			"name": "Markup: Link",
 			"scope": [
-				"meta.link"
+				"meta.link",
+				"meta.image.inline"
 			],
 			"settings": {
 				"foreground": "#4b83cd"
@@ -616,7 +661,13 @@
 			"scope": [
 				"markdown.punctuation",
 				"markdown.link punctuation",
-				"markdown.raw punctuation"
+				"punctuation.definition.raw.markdown",
+				"punctuation.definition.heading.markdown",
+				"beginning.punctuation.definition.list.markdown",
+				"beginning.punctuation.definition.quote.markdown",
+				"punctuation.definition.bold.markdown",
+				"punctuation.definition.italic.markdown",
+				"punctuation.definition.metadata.markdown"
 			],
 			"settings": {
 				"foreground": "#448c27"
@@ -625,7 +676,8 @@
 		{
 			"name": "Markdown: Link title",
 			"scope": [
-				"markdown.link title"
+				"string.other.link.description.markdown",
+				"string.other.link.title.markdown"
 			],
 			"settings": {
 				"foreground": "#7a3e9d"
