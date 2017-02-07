@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [v1.0.2] - 2017-02-05
+### Fixed
+- Fixed many coloration problems introduced by VSC 1.9's new scope matching engine (so long, sensical CSS logic; hello overly verbose and horrifically dated TextMate approach!)
+
 ## [v1.0.1] - 2017-02-01
 ### Fixed
 - Fixed background color for word highlights
