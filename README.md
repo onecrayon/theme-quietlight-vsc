@@ -21,7 +21,7 @@ I hope you enjoy working by Quiet Light! Please [let me know](http://onecrayon.c
 
 ## Known issues
 
-* No background colors
+* No background colors (see [VSC issue #3429](https://github.com/Microsoft/vscode/issues/3429))
 * PHP coloration in HTML attribute strings is currently borked
 * SCSS commas in selectors (and some tag names) are uncolored (no syntax zone)
 * HTML `<style>` tag attribute equal signs are miscolored (no syntax zone)
