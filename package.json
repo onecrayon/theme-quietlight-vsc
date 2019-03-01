@@ -1,7 +1,7 @@
 {
     "name": "theme-quietlight-vsc",
     "displayName": "Quiet Light for VSC",
-    "description": "Light, peaceful coding.",
+    "description": "Light, peaceful coding (from the original designer).",
     "repository": {
         "type": "git",
         "url": "https://github.com/onecrayon/theme-quietlight-vsc.git"
@@ -11,7 +11,7 @@
         "theme": "light"
     },
     "icon": "icon.png",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "publisher": "onecrayon",
     "engines": {
         "vscode": "^1.9.0"
