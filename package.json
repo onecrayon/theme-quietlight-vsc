@@ -10,7 +10,7 @@
         "color": "#e6ebf2",
         "theme": "light"
     },
-    "icon": "images/icon.png",
+    "icon": "icon.png",
     "version": "1.0.2",
     "publisher": "onecrayon",
     "engines": {
